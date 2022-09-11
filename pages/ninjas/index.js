@@ -20,6 +20,8 @@ const Ninjas = ({ ninjas }) => {
         <Link href={'/ninjas/' + ninja.id} key={ninja.id}>
           <a>
             <h3>{ ninja.name }</h3>
+            <h5>{ninja.company.name}</h5>
+            <h6>{ninja.address.geo.lat}</h6>
           </a>
         </Link>
       ))}
